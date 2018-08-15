@@ -5,7 +5,7 @@ using namespace pj;
 
 class MyAccount : public Account
 {
-	typedef void(*callArrived)(int callId, MyAccount account);
+	typedef void(*callArrived)(int callId, MyAccount &account);
 	 callArrived CallArrivedCallBack;
 public:
 	MyAccount(callArrived callArrivedCallBack);
